@@ -1,0 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  /* Global Variables */
+  --primary-color: blue;
+  --secondary-color: green;
+  --accent-color: aqua;
+  --border-radius: 5px;
+  --avatar-width: 80px;
+}
