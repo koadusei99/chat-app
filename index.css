@@ -12,19 +12,18 @@ body {
 .chat-area {
   max-width: min(1000px, 90%);
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: minmax(70px, 45%) 1fr;
   height: 80vh;
   margin: 1em auto;
 }
 /* left pane containing sidebar and contact list */
 .left-pane {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 70px auto;
 }
 /* sidebar */
 .sidebar {
   background-color: black;
-  width: 70px;
 }
 /* contacts */
 .contacts {
@@ -33,12 +32,11 @@ body {
 /* right pane containing chat and input */
 .right-pane {
   display: grid;
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: 50px 1fr 50px;
 }
 /* top bar for chat */
 .top {
   background-color: rgb(40, 40, 40);
-  height: 60px;
 }
 /* chat content */
 .chat {
@@ -47,12 +45,20 @@ body {
 /* input area */
 .text {
   background-color: rgb(40, 40, 40);
-  height: 50px;
 }
 
 @media screen and (max-width: 767.98px) {
   /* hide contact list at small screen size */
   .contacts {
     display: none;
+  }
+  /* readjust left-pane to repond to hidden contacts list */
+  .chat-area {
+    grid-template-columns: 70px 1fr;
+  }
+  /* increase top row to fit avatar */
+  .right-pane {
+    display: grid;
+    grid-template-rows: 60px 1fr 50px;
   }
 }
