@@ -45,9 +45,7 @@ main{
 .top, .text{
   background-color: var(--bg-color-translucent);
 }
-.top {
-  
-}
+
 /* chat content */
 .chat {
   padding: 15px;
@@ -59,42 +57,43 @@ main{
 }
 .utop{
   /*border: 3px solid white;*/
-  margin: 10px auto;
-  width: 95%;
-  height: 40px;
+  /*margin: 10px auto;*/
+  width: 100%;
+  padding: 10px;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.pshow{
+.profile{
   /*border: 3px solid white;*/
   
-  width: 200px;
-  height: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   
   font-size: 10px;
 }
-.pshow:hover{
+.avatar{
+   display: none;
+}
+.profile-details{
+    display: flex;
+    flex-direction: column;
+}
+.profile:hover, .icons>*:hover, #sendButton:hover{
   border: 2px solid white;
 }
-.fright{
+.icons{
   /*border: 3px solid white;*/
-  width: 200px;
-  height: 100%;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
+  color: var(--blue-dark);
 }
-.buticon{
-  /*border: 3px solid white;*/
-  height: 100%;
-  width: 30px;
+.icons>*{
+  margin: 0 10px;
 }
-.buticon:hover{
-  border: 2px solid white;
-}
+
 .listItem{
   border: 3px solid black;
   list-style-type: none;
@@ -144,9 +143,7 @@ main{
     border:none;
     padding: 5px;
 }
-#sendButton:hover{
-  border: 2px solid white;
-}
+
 .bar{
   /*border: 3px solid white;*/
   width: 100%;
@@ -188,4 +185,8 @@ main{
     display: grid;
     grid-template-rows: 60px 1fr 50px;
   }
+  .avatar{
+    display: inherit;
+  }
 }
+
