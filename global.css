@@ -8,19 +8,27 @@
   /* COLORS */
   --blue-dark: #426696;
   --blue: #658ec6;
-  --secondary-color: green;
   --border-radius: 15px;
   --avatar-width: 80px;
   --gradient-bg: linear-gradient(to right top, #65dfc9, #6cdbeb);
   --bg-color: #fff;
   /* BUBBLES */
-  --text-bubble-color: #fff;
-  --reply-bubble-color: rgb(233, 233, 233);
+  --text-bubble-color: rgb(204, 224, 255);
+  /* --text-bubble-radius: 15px 20px 30px 40px; */
+  --reply-bubble-color: rgb(255, 255, 255);
+  /* --reply-bubble-radius: 15px 20px 30px 40px; */
   --bg-color-translucent: rgba(255, 255, 255, 0.6);
   --bubble-width: fit-content;
   --bubble-max-width: 90%;
   --bubble-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.6);
   --bubble-padding: 5px 15px;
+  --glass-bg: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  --box-shadow: 2px 8px 10px 1px rgba(0, 0, 0, 0.2);
+  --border-color: rgba(0, 0, 0, 0.2);
 
   --font-color: #0d2341;
 }
