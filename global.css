@@ -20,7 +20,7 @@
   --bg-color-translucent: rgba(255, 255, 255, 0.6);
   --bubble-width: fit-content;
   --bubble-max-width: 90%;
-  --bubble-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.6);
+  --bubble-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.6);
   --bubble-padding: 5px 15px;
   --glass-bg: linear-gradient(
     to right bottom,
