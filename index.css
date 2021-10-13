@@ -6,6 +6,8 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
   font-size: 18px;
+  background-image:var(--gradient-bg);
+ 
 }
 
 /* whole chat area  */
@@ -15,15 +17,20 @@ body {
   grid-template-columns: minmax(70px, 45%) 1fr;
   height: 80vh;
   margin: 1em auto;
+  background-color: var(--glass-bg);
+   
 }
 /* left pane containing sidebar and contact list */
 .left-pane {
   display: grid;
   grid-template-columns: 70px auto;
+  
 }
 /* sidebar */
 .sidebar {
-  background-color: black;
+  background-color:  #658ec6;
+ 
+  
 }
 /* contacts */
 .contacts {
@@ -45,6 +52,41 @@ body {
 /* input area */
 .text {
   background-color: rgb(40, 40, 40);
+}
+
+
+.chats{
+  border: 1px solid white;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  padding-left: 5px;
+  color: #0d2341;
+  border-radius: 15px;
+}
+.search{
+  border: 1px solid white;
+  width: 300px;
+  height: 30px;
+  
+  border-radius: 15px;
+  color: #0d2341;
+  margin-left: 10px;
+
+}
+.searchdiv{
+ padding-left: 100px;
+ color: #0d2341
+}
+.image{
+border-radius: 50px;
+
+ 
+}
+.names{
+padding-bottom:  50px;
+color: #0d2341;
+margin-left: 10px;
 }
 
 @media screen and (max-width: 767.98px) {
