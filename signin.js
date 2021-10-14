@@ -10,11 +10,19 @@ function checkInput() {
   let password = passwordInput.value;
 
   if (username.length < 6) {
-    console.log("Invalid username");
+      if(username==""){
+          alert("Empty field: Please type in your username")
+          return;
+      }
+    alert("Invalid username");
     return;
   }
   if (password.length < 8) {
-    console.log("invalid password");
+      if (password == ""){
+          alert("Empty field: Please insert password")
+          return;
+      }
+    alert("invalid password");
     return;
   }
   console.log("Signed in");
