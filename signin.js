@@ -4,7 +4,6 @@ const passwordInput = document.getElementById("password");
 const button = document.getElementById("submitButton");
 
 // validate credentials
-
 function checkInput() {
   // get user name and password
   let username = usernameInput.value;
@@ -12,21 +11,29 @@ function checkInput() {
 
   if (username.length < 6) {
       if(username==""){
-          alert('Empty field: Please enter Username');
+          alert("Empty field: Please type in your username")
           return;
       }
-    console.log("Invalid username");
+    alert("Invalid username");
     return;
   }
   if (password.length < 8) {
-      if(password == ""){
-          alert('password field empty:  Please enter password');
-        return;
+      if (password == ""){
+          alert("Empty field: Please insert password")
+          return;
       }
-    console.log("invalid password");
+    alert("invalid password");
     return;
   }
   console.log("Signed in");
   // store username in localstorage
   localStorage.setItem("username", username);
 
+  // redirect to chat page
+  window.location.href = "index.html";
+
+  return;
+}
+
+// redirect to chat page
+button.addEventListener("click", checkInput);
