@@ -49,26 +49,27 @@ function addBubble(message, type) {
 
 // Decide reply for text
 function parseReply(text) {
- text = text.toLowerCase();
+  text = text.toLowerCase();
   let replyMessage = "";
   if (text.includes("hello") || text.includes("hi")) {
-    replyMessage += `Hello ${username}`;
+    replyMessage += `Hello ${username}.`;
   }
   if (
     text.includes("wassup") ||
     text.includes("whats up") ||
     text.includes("what's up")
   ) {
-    replyMessage += "Its a great day. Have you written some codes today";
+    replyMessage += "Its a great day. Have you written some codes today?";
   }
-  if(text.includes('yes')){
+  if (text.includes("yes")) {
     replyMessage += "Congratulations You've done a great Job";
   }
-  if(text.includes('no')){
-    replyMessage += "OOPS! Please try and write some codes because it's a great day to do that"
+  if (text.includes("no")) {
+    replyMessage +=
+      "OOPS! Please try and write some codes because it's a great day to do that";
   }
-  if (text.includes('how did your day go')){
-    replyMessage +='Good by grace'
+  if (text.includes("how did your day go")) {
+    replyMessage += "Good by His Grace";
   }
   if (replyMessage.length < 1) {
     return;

@@ -164,7 +164,7 @@ main {
   color: var(--blue-dark);
 }
 .sidebar > * {
-  margin: 20px 20px;
+  margin: 12px 20px;
 }
 .reply-bubble {
   color: black;

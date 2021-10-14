@@ -10,12 +10,12 @@ function checkInput() {
   let password = passwordInput.value;
 
   if (username.length < 6 || password.length < 8) {
-    
-    document.getElementById('errormsg2').innerText = `invalid name or password`;
-    return
-     
+    document.getElementById(
+      "errormsg2"
+    ).innerText = `Invalid username or password`;
+    return;
   }
- 
+
   console.log("Signed in");
   // store username in localstorage
   localStorage.setItem("username", username);
