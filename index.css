@@ -35,6 +35,9 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: var(--blue-dark);
+  border-bottom-left-radius: var(--border-radius);
+  border-top-left-radius: var(--border-radius);
 }
 
 /* contacts */
@@ -63,6 +66,7 @@ main {
 .chat {
   padding: 15px;
 }
+
 /* input area */
 .text {
   display: flex;
@@ -127,25 +131,45 @@ main {
 .reply-bubble {
   padding: 8px;
   border-radius: 10px;
-
-  margin-left: auto;
+  margin-right: auto;
+}
+.searchdiv {
+  padding: 5px 10px;
 }
 .search {
-  border-radius: 10px;
-  width: 300px;
-  height: 50px;
-  margin-bottom: 20px;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  margin-bottom: 10px;
   margin-top: 10px;
+  padding: 0.6rem 0.5rem;
+  font-size: 1rem;
 }
 .image {
   border-radius: 50px;
 }
 .currentcontact {
+  padding: 0.5rem;
   display: flex;
-  border: 1px solid rgb(253, 225, 225);
+  border: 1px solid rgb(255, 255, 255);
+  cursor: pointer;
+  transition: all 200ms ease-in;
+}
+.currentcontact:hover {
+  background-color: white;
+  border: 1px solid var(--blue);
 }
 .nametext {
   padding-left: 20px;
+}
+.nametext .name {
+  font-weight: 700;
+}
+.nametext .texts {
+  margin-top: 0.5rem;
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: var(--blue-dark);
 }
 .sidebar > * {
   margin: 20px 20px;
@@ -158,7 +182,7 @@ main {
   margin-right: auto;
 }
 .text-message {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-weight: 500;
 }
 .time {
