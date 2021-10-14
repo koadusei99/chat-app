@@ -31,11 +31,15 @@ main {
 }
 /* sidebar */
 .sidebar {
-  background-color: black;
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 /* contacts */
 .contacts {
-  background-color: rgb(20, 20, 20);
+  background-color: var(--bg-color-translucent);
 }
 /* right pane containing chat and input */
 .right-pane {
@@ -121,6 +125,33 @@ main {
   margin-left: auto;
 }
 .reply-bubble {
+  padding: 8px;
+  border-radius: 10px;
+
+  margin-left: auto;
+}
+.search {
+  border-radius: 10px;
+  width: 300px;
+  height: 50px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.image {
+  border-radius: 50px;
+}
+.currentcontact {
+  display: flex;
+  border: 1px solid rgb(253, 225, 225);
+}
+.nametext {
+  padding-left: 20px;
+}
+.sidebar > * {
+  margin: 20px 20px;
+}
+.reply-bubble {
+  color: black;
   background-color: var(--text-bubble-color);
   box-shadow: var(--bubble-shadow);
   border-radius: var(--reply-bubble-radius);
