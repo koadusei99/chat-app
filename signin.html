@@ -1,54 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://unpkg.com/feather-icons"></script>
 
-    <link rel="stylesheet" href="global.css">
-    <link rel="stylesheet" href="signin.css">
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="signin.css" />
     <title>Chat</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <!-- For NAVBAR -->
+      <!-- For NAVBAR -->
     </header>
     <main>
-        <section class="form-area">
-            <form action="" class="form">
-                <div class="logo">
-                    <img class="logo-img" src="./assets/images/logo.svg" alt="">
-                </div>
-                <div class="input-group">
-                    <label for="username">Username</label>
-                    <input type="text" name="username" id="username">
-                </div>
-                <div class="input-group">
-                    <label for="password">Password</label>
-                    <input type="password" name="password" id="password">
-                </div>
-                <div class="input-group">
-                    <button type="button" id="submitButton">Start Chatting</button>
-                </div>
-                <p class="prompt">Don't have an Account? <a href="sdfds">Register</a></p>
-            </form>
-        </section>
+      <section class="form-area">
+        <form action="" class="form">
+          <div class="logo">
+            <img class="logo-img" src="./assets/images/logo.svg" alt="" />
+          </div>
+          <div class="input-group">
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" />
+          </div>
+          <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" />
+          </div>
+          <i><span class="errormsg" id="errormsg2"> </span></i>
+          <div class="input-group">
+            <button type="button" id="submitButton">Start Chatting</button>
+          </div>
+          <p class="prompt">
+            Don't have an Account? <a href="sdfds">Register</a>
+          </p>
+        </form>
+      </section>
     </main>
     <footer>
-        <!-- For FOOTER -->
+      <!-- For FOOTER -->
     </footer>
     <script src="signin.js"></script>
     <script>
-        feather.replace()
+      feather.replace();
     </script>
-</body>
-
+  </body>
 </html>

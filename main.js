@@ -49,7 +49,7 @@ function addBubble(message, type) {
 
 // Decide reply for text
 function parseReply(text) {
-  text = text.toLowerCase();
+ text = text.toLowerCase();
   let replyMessage = "";
   if (text.includes("hello") || text.includes("hi")) {
     replyMessage += `Hello ${username}`;
@@ -66,6 +66,9 @@ function parseReply(text) {
   }
   if(text.includes('no')){
     replyMessage += "OOPS! Please try and write some codes because it's a great day to do that"
+  }
+  if (text.includes('how did your day go')){
+    replyMessage +='Good by grace'
   }
   if (replyMessage.length < 1) {
     return;
