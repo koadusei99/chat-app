@@ -1,6 +1,7 @@
 const textInput = document.getElementById("textInput");
 const sendButton = document.getElementById("sendButton");
 const chatList = document.getElementById("chatList");
+const profile = document.getElementById("profile-name")
 
 let username = localStorage.getItem('username');
 
@@ -57,7 +58,13 @@ function parseReply(text) {
     text.includes("whats up") ||
     text.includes("what's up")
   ) {
-    replyMessage += ". Wassup";
+    replyMessage += "Its a great day. Have you written some codes today";
+  }
+  if(text.includes('yes')){
+    replyMessage += "Congratulations You've done a great Job";
+  }
+  if(text.includes('no')){
+    replyMessage += "OOPS! Please try and write some codes because it's a great day to do that"
   }
   if (replyMessage.length < 1) {
     return;
