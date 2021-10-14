@@ -35,17 +35,128 @@ body {
   grid-template-rows: 50px 1fr 50px;
 }
 /* top bar for chat */
+.top, .text{
+  background-color: var(--bg-color-translucent);
+}
 .top {
-  background-color: rgb(40, 40, 40);
+  
 }
 /* chat content */
 .chat {
-  background-color: rgb(80, 80, 80);
+
 }
 /* input area */
 .text {
-  background-color: rgb(40, 40, 40);
+  
 }
+.utop{
+  /*border: 3px solid white;*/
+  margin: 10px auto;
+  width: 95%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pshow{
+  /*border: 3px solid white;*/
+  
+  width: 200px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 10px;
+}
+.pshow:hover{
+  border: 2px solid white;
+}
+.fright{
+  /*border: 3px solid white;*/
+  width: 200px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.buticon{
+  /*border: 3px solid white;*/
+  height: 100%;
+  width: 30px;
+}
+.buticon:hover{
+  border: 2px solid white;
+}
+.listItem{
+  border: 3px solid black;
+  list-style-type: none;
+  border: none;
+  background-color:var(--accent-color);
+  border-radius: 10px;
+  /*margin-top: 20px;*/;
+  width: 100%;
+  
+}
+.text-bubble{
+  border: 2px solid black;
+  color: black;
+  background-color: var(--bg-color-translucent);
+  list-style-type: none;
+  border: none;
+  padding: var(--bubble-padding);
+  width: 100%;
+  box-shadow: var(--bubble-shadow);
+  padding: 8px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.reply-bubble{
+  color: black;
+  background-color: var(--text-bubble-color);
+  box-shadow: var(--bubble-shadow);
+  border-radius: 10px;
+
+}
+#textInput{
+    width: 90%;
+    height: 80%;
+    background-color: transparent;
+    color: white;
+    border:none;
+}
+#sendButton{
+    background-color: transparent;
+    border:none;
+}
+#sendButton:hover{
+  border: 2px solid white;
+}
+.bar{
+  /*border: 3px solid white;*/
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.Allchats{
+  /*border: 3px solid white;*/
+  height: 70px;
+  width: 100%;
+  margin-top: 40px;
+}
+.folder{
+  height: 100%;
+  width: 100%;
+}
+
+.time{
+  width: 100%;
+  font-size: 10px;
+  margin-left: 500px
+}
+
+
+
 
 @media screen and (max-width: 767.98px) {
   /* hide contact list at small screen size */
