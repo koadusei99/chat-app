@@ -1,9 +1,74 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: "Montserrat", BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  line-height: 1.6;
-  font-size: 18px;
+.form-area {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: var(--gradient-bg);
+}
+.form {
+  padding: 1rem;
+  min-height: 70vh;
+  width: min(500px, 80%);
+  background-color: aqua;
+  display: grid;
+  grid-auto-flow: row;
+  justify-items: center;
+  border-radius: var(--border-radius);
+  background: var(--glass-bg);
+  box-shadow: var(--box-shadow);
+}
+.logo-img {
+  margin-top: -50%;
+}
+.logo-img {
+  width: 150px;
+}
+.input-group {
+  margin: 1rem;
+  width: 70%;
+}
+.input-group > * {
+  display: block;
+}
+.input-group > label {
+  padding: 0 10px;
+  margin-bottom: 0.2rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+.input-group > input {
+  width: 100%;
+  padding: 0.6rem 0.5rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 1px solid var(--blue-dark);
+}
+.input-group > button {
+  margin: 0.5rem auto;
+  width: 80%;
+  padding: 1rem 0.5rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 3px solid var(--blue-dark);
+  font-weight: 700;
+  transform: translateY(5px);
+  transition: all 200ms ease-in;
+  cursor: pointer;
+}
+.input-group > button:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(0);
+}
+.prompt {
+  margin: 1rem 0;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.prompt > a {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--blue-dark);
+}
+
+@media screen and (max-width: 767.98px) {
 }
