@@ -1,8 +1,10 @@
 const textInput = document.getElementById("textInput");
 const sendButton = document.getElementById("sendButton");
 const chatList = document.getElementById("chatList");
+const contactList = document.querySelectorAll(".name");
+const profileName = document.getElementById("profile-name");
 
-let username = localStorage.getItem('username');
+let username = localStorage.getItem("username");
 
 function sendText() {
   let message = textInput.value;
@@ -71,8 +73,10 @@ function parseReply(text) {
 // disable/enable button depending on presence of input
 function toggleButton() {
   if (textInput.value.length < 1) {
+    sendButton.classList.add("disabled");
     sendButton.setAttribute("disabled", "disabled");
   } else {
+    sendButton.classList.remove("disabled");
     sendButton.removeAttribute("disabled");
   }
 }
@@ -95,4 +99,11 @@ textInput.addEventListener("keyup", function (event) {
     sendButton.click();
   }
   return;
+});
+contactList.forEach((c) => {
+  c.addEventListener("click", (e) => {
+    let name = e.target.innerText;
+    name.length ? (profileName.innerText = name) : null;
+    return;
+  });
 });
