@@ -9,22 +9,13 @@ function checkInput() {
   let username = usernameInput.value;
   let password = passwordInput.value;
 
-  if (username.length < 6) {
-      if(username==""){
-          alert("Empty field: Please type in your username")
-          return;
-      }
-    alert("Invalid username");
-    return;
+  if (username.length < 6 || password.length < 8) {
+    
+    document.getElementById('errormsg2').innerText = `invalid name or password`;
+    return
+     
   }
-  if (password.length < 8) {
-      if (password == ""){
-          alert("Empty field: Please insert password")
-          return;
-      }
-    alert("invalid password");
-    return;
-  }
+ 
   console.log("Signed in");
   // store username in localstorage
   localStorage.setItem("username", username);
