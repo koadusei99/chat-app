@@ -2,7 +2,7 @@ const textInput = document.getElementById("textInput");
 const sendButton = document.getElementById("sendButton");
 const chatList = document.getElementById("chatList");
 
-let username = "Kuhn";
+let username = localStorage.getItem('username');
 
 function sendText() {
   let message = textInput.value;
