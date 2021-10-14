@@ -6,10 +6,11 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
   font-size: 18px;
+  background-image: var(--gradient-bg);
 }
 
 /*main area*/
-main{
+main {
   background-image: var(--gradient-bg);
   min-height: 100vh;
 }
@@ -30,11 +31,15 @@ main{
 }
 /* sidebar */
 .sidebar {
-  background-color: black;
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 /* contacts */
 .contacts {
-  background-color: rgb(20, 20, 20);
+  background-color: var(--bg-color-translucent);
 }
 /* right pane containing chat and input */
 .right-pane {
@@ -42,7 +47,8 @@ main{
   grid-template-rows: 50px 1fr 50px;
 }
 /* top bar for chat */
-.top, .text{
+.top,
+.text {
   background-color: var(--bg-color-translucent);
 }
 
@@ -55,7 +61,7 @@ main{
   display: flex;
   justify-content: end;
 }
-.utop{
+.utop {
   /*border: 3px solid white;*/
   /*margin: 10px auto;*/
   width: 100%;
@@ -65,52 +71,54 @@ main{
   justify-content: space-between;
   align-items: center;
 }
-.profile{
+.profile {
   /*border: 3px solid white;*/
-  
+
   display: flex;
   flex-direction: row;
-  
+
   font-size: 10px;
 }
-.avatar{
-   display: none;
+.avatar {
+  display: none;
 }
-.profile-details{
-    display: flex;
-    flex-direction: column;
+.profile-details {
+  display: flex;
+  flex-direction: column;
 }
-.profile:hover, .icons>*:hover, #sendButton:hover{
+.profile:hover,
+.icons > *:hover,
+#sendButton:hover {
   border: 2px solid white;
 }
-.icons{
+.icons {
   /*border: 3px solid white;*/
   display: flex;
   /* justify-content: space-between; */
   align-items: center;
   color: var(--blue-dark);
 }
-.icons>*{
+.icons > * {
   margin: 0 10px;
 }
 
-.listItem{
+.listItem {
   border: 3px solid black;
   list-style-type: none;
   border: none;
-  background-color:var(--accent-color);
+  background-color: var(--accent-color);
   border-radius: 10px;
-  margin-bottom: 20px;;
+  margin-bottom: 20px;
   width: 100%;
-  
 }
-.text-bubble, .reply-bubble{
+.text-bubble,
+.reply-bubble {
   width: var(--bubble-width);
   max-width: var(--bubble-max-width);
   padding: var(--bubble-padding);
 }
 
-.text-bubble{
+.text-bubble {
   border: 2px solid black;
   color: black;
   background-color: var(--bg-color-translucent);
@@ -120,56 +128,72 @@ main{
   box-shadow: var(--bubble-shadow);
   padding: 8px;
   border-radius: 10px;
-  
+
   margin-left: auto;
 }
-.reply-bubble{
+.search {
+  border-radius: 10px;
+  width: 300px;
+  height: 50px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.image {
+  border-radius: 50px;
+}
+.currentcontact {
+  display: flex;
+  border: 1px solid rgb(253, 225, 225);
+}
+.nametext {
+  padding-left: 20px;
+}
+.sidebar > * {
+  margin: 20px 20px;
+}
+.reply-bubble {
   color: black;
   background-color: var(--text-bubble-color);
   box-shadow: var(--bubble-shadow);
   border-radius: 10px;
   margin-right: auto;
+}
+#textInput {
+  width: 90%;
+  padding: 5px;
+  background-color: transparent;
+  color: var(--font-color);
+  border: none;
+}
+#sendButton {
+  background-color: transparent;
+  border: none;
+  padding: 5px;
+}
 
-}
-#textInput{
-    width: 90%;
-    padding: 5px;
-    background-color: transparent;
-    color: var(--font-color);
-    border:none;
-}
-#sendButton{
-    background-color: transparent;
-    border:none;
-    padding: 5px;
-}
-
-.bar{
+.bar {
   /*border: 3px solid white;*/
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
 }
-.Allchats{
+.Allchats {
   /*border: 3px solid white;*/
   height: 70px;
   width: 100%;
   margin-top: 40px;
 }
-.folder{
+.folder {
   height: 100%;
   width: 100%;
 }
 
-.time{
+.time {
   width: fit-content;
   font-size: 10px;
   margin-left: auto;
 }
-
-
-
 
 @media screen and (max-width: 767.98px) {
   /* hide contact list at small screen size */
@@ -185,8 +209,7 @@ main{
     display: grid;
     grid-template-rows: 60px 1fr 50px;
   }
-  .avatar{
+  .avatar {
     display: inherit;
   }
 }
-
